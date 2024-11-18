@@ -54,10 +54,34 @@
 @layer components{
 
   .container{
-    @apply max-w-[1800px] mx-auto px-4;
+    @apply max-w-[1800px] mx-auto px-5;
+}
+.footer  li{
+  @apply text-gray-600 ;
+}
+.footer {
+  @apply flex flex-col gap-1
+}
+.footer p{
+  @apply font-semibold;
+
+}
+.toggle-menu span{
+  @apply h-[3px] w-5 block mb-1 transition-all bg-black;
+}
+.toggle-menu.active span:first-child{
+  @apply rotate-[45deg] translate-y-3;
+}
+.toggle-menu.active span:nth-child(2){
+  @apply opacity-0;
+}
+.toggle-menu.active span:last-child{
+  @apply rotate-[-45deg] translate-y-[-2px];
+}
+.header-wrapper li{
+  @apply text-xl mb-10 md:mb-0;
 }
 
-.collection-wrapper card{
-  @apply  flex flex-col gap-2;
-}
+
+
 }

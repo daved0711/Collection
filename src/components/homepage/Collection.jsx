@@ -57,7 +57,7 @@ const Collection = () => {
         <p>Our latest collection where classic and contemporary styles converge in 
             <br/>perfect harmony</p>
             </div>
-      <div className='grid grid-cols-[1fr,_1fr,_1fr] gap-2'>
+      <div className='grid md:grid-cols-3 gap-5 '>
       {collectionArray.map((item, key)=>(
            <Itemscard item={item} key={key}/>
         ))}  

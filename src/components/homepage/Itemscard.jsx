@@ -3,10 +3,9 @@ import { imgPath } from '../helpers/functions-general'
 
 const Itemscard = ({item, key}) => {
   return (
-    <div className='new-arrival-card px-10' key={key} >
-    <div className='mb-4 p'>
-     <p className='absolute top-3 left-3 bg-white px-4 py-1 rounded-full text-[10px] font-bold uppercase z-20 group-hover:opacity-0'>new</p>
-     <img
+    <div className='new-arrival-card' key={key} >
+    <div className='mb-4 '>  
+     <img className='md:h-[30rem] w-full h-[20rem] rounded-3xl objec'
            src={`${imgPath}/${item.img}`}
            alt=""/>
        
